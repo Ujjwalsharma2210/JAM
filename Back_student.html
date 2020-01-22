@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Student login</title>
+		<link rel="stylesheet" type="text/css" href="login_design.css">
+	</head>
+	<body>
+		<div class="loginbox">
+			<img src="user.png" class="avatar">
+
+			<h1>Login Here</h1>
+			<form>
+				<p>Username</p>
+				<input type="text" name="userid" placeholder="Enter Username">
+				<p>Password</p>
+				<input type="Password" name="pswrd" placeholder="Enter Password">
+				<input type="submit"  onclick="check(this.form)" value="Login"><br>
+				<a href="#">Lost your password?</a><br>
+
+			</form>
+		</div>
+		<script language="JavaScript">
+    function check(form)
+		{
+			if(form.userid.value=="abc" && form.pswrd.value=="123")
+			{
+				window.open('/Users/ujjwalsharma/Documents/web dev/SGS_files/student_portal.html')
+			}
+			else
+			{
+			  alert("the username and password do not match")
+			}
+		}
+  </script>
+	</body>
+</html>
